@@ -5,7 +5,7 @@
 <h1 align="center">Cellcom ApkStart</h1>
 
 <p align="center">
-  <b>Ejecutá apps Android en Windows como si fueran programas nativos.</b><br>
+  <b>Ejecuta apps Android en Windows como si fueran programas nativos.</b><br>
   100 % en español latino · by <a href="https://www.cellcomweb.com.ar">Cellcom Technology</a>
 </p>
 
@@ -19,7 +19,7 @@
 
 ## ¿Qué es?
 
-**Cellcom ApkStart** es un lanzador de apps Android para Windows. Instalás un APK y la app aparece como un programa más: con su propio ícono en el escritorio y en el menú Inicio y su propia ventana, sin tener que abrir un emulador completo cada vez.
+**Cellcom ApkStart** es un lanzador de apps Android para Windows. Instalas un APK y la app aparece como un programa más: con su propio ícono en el escritorio y en el menú Inicio y su propia ventana, sin tener que abrir un emulador completo cada vez.
 
 Por dentro usa un entorno Android virtualizado que se maneja solo. Arranca, se repara y se optimiza en segundo plano, así que no hace falta saber nada de emuladores.
 
@@ -34,7 +34,7 @@ Por dentro usa un entorno Android virtualizado que se maneja solo. Arranca, se r
 - 🌎 **Android configurado para la región**: idioma es-419, zona horaria de tu PC y DNS 1.1.1.1 / 8.8.8.8.
 - ⌨️ **Asignación de teclas** para controlar juegos y apps con el teclado.
 - 🔄 **Rotación de pantalla**, varios tamaños de resolución y ajuste de densidad.
-- 🧠 **Asignación de recursos**: elegís cuánta memoria, cuántos núcleos y cuánto espacio para datos le das a Android.
+- 🧠 **Asignación de recursos**: eliges cuánta memoria, cuántos núcleos y cuánto espacio para datos le das a Android.
 - 🛠️ **Diagnóstico y reparación automáticos**: detecta aceleración por hardware, runtime VC++, puertos ocupados, archivos de bloqueo, falta de espacio, problemas de red y más, y casi todo se arregla con un clic.
 - 🧩 **Modo de compatibilidad ARM** (imagen Android 14 con Google Play) para apps que no corren en x86.
 - 🧹 **Mantenimiento**: limpieza de imágenes viejas, restablecimiento de datos de Android y reparación de red sin perder las apps.
@@ -53,30 +53,32 @@ Por dentro usa un entorno Android virtualizado que se maneja solo. Arranca, se r
 
 ## Descarga e instalación
 
-1. Andá a **[Releases](../../releases/latest)** y descargá `Cellcom-ApkStart-Setup-x.x.x.exe`.
-2. Ejecutá el instalador y seguí los pasos.
-   - Si Windows SmartScreen muestra «Windows protegió su PC», hacé clic en **Más información → Ejecutar de todas formas**. Aparece porque el ejecutable no tiene firma digital comercial.
-3. Abrí **Cellcom ApkStart** desde el escritorio o el menú Inicio.
+1. Ve a **[Releases](../../releases/latest)** y descarga `Cellcom-ApkStart-0.6.4-Setup.exe`.
+2. Ejecuta el instalador y sigue los pasos.
+   - Si Windows SmartScreen muestra «Windows protegió su PC», haz clic en **Más información → Ejecutar de todas formas**. Aparece porque el ejecutable no tiene firma digital comercial.
+3. Abre **Cellcom ApkStart** desde el escritorio o el menú Inicio.
 4. La primera vez, el asistente prepara el entorno:
    - Motor del entorno: unos **440 MB**.
    - Imagen de sistema Android: unos **1,5 GB**.
 
    Según tu conexión puede tardar varios minutos. Es solo la primera vez.
 
-> 💡 Si tenés antivirus, agregá la carpeta de instalación y la carpeta de datos del entorno a las exclusiones. Algunos antivirus borran componentes del emulador por error.
+> 💡 Si tienes antivirus, agrega la carpeta de instalación y la carpeta de datos del entorno a las exclusiones. Algunos antivirus borran componentes del emulador por error.
 
 ## Uso
 
 ### Instalar una app
-1. Hacé clic en **Instalar APK** y elegí el archivo `.apk`.
-2. Esperá a que termine la instalación. La app aparece en la lista y en el escritorio.
-3. Abrila con doble clic. La primera vez el entorno se precarga y tarda un poco más.
+1. Haz clic en **Instalar APK** y elige el archivo `.apk`.
+2. Espera a que termine la instalación. La app aparece en la lista y en el escritorio.
+3. Ábrela con doble clic. La primera vez el entorno se precarga y tarda un poco más.
 
 ### Iniciar Android sin abrir una app
-El entorno arranca automáticamente al abrir cualquier app. Para tener el escritorio completo de Android, instalá un launcher (por ejemplo **Lawnchair**, **Nova Launcher** o **KISS**) como si fuera una app más y abrilo desde ApkStart. Funciona mejor con **Configuración → Tipo de ventana → Ventana independiente**.
+- **Precarga al iniciar** (Configuración → Rendimiento y recursos): al abrir el programa, Android arranca en segundo plano y después cualquier app abre casi al instante.
+- **Iniciar entorno** (Configuración → Rendimiento y recursos → Parámetros avanzados): arranca Android en el momento.
 
 ### Opciones útiles (Configuración)
-- **Tipo de ventana**: integrado o independiente.
+- **Tipo de ventana**: ventana nativa (predeterminada) o integrada.
+- **Chequeo del equipo** (Diagnóstico y reparación): revisa virtualización, placa de video y memoria, y aplica la configuración recomendada.
 - **Tamaño de la imagen**: 720×1280, 900×1600, 1080×1920 o 1440×2560. Cuanto más chico, menos recursos usa.
 - **Orientación del panel**: automática, vertical u horizontal.
 - **Recursos**: memoria, núcleos y tamaño de la partición de datos.
@@ -87,23 +89,23 @@ El entorno arranca automáticamente al abrir cualquier app. Para tener el escrit
 
 | Problema | Solución |
 |---|---|
-| Arranca muy lento | Activá *Plataforma del hipervisor de Windows* desde **Configuración → Diagnóstico → Reparar** (pide permisos de administrador) y reiniciá la PC. |
-| Error `0xc0000135` | Falta el runtime de VC++. Instalá [Microsoft Visual C++ 2015-2022 Redistributable (x64)](https://aka.ms/vs/17/release/vc_redist.x64.exe). |
+| Arranca muy lento | Activa *Plataforma del hipervisor de Windows* desde **Configuración → Diagnóstico → Reparar** (pide permisos de administrador) y reinicia la PC. |
+| Error `0xc0000135` | Falta el runtime de VC++. Instala [Microsoft Visual C++ 2015-2022 Redistributable (x64)](https://aka.ms/vs/17/release/vc_redist.x64.exe). |
 | Pantalla negra o la app no carga contenido de Internet | **Configuración → Reparar red**. Primero intenta un arranque en frío sin tocar tus datos. |
-| «AVD ya en uso» / archivos de bloqueo | ApkStart los limpia solo. Si se repite, cerrá otros emuladores (BlueStacks, MuMu, NoxPlayer, MEmu) o reiniciá la PC. |
-| Puerto ocupado | Cerrá otros emuladores. ApkStart elige otro puerto automáticamente. |
-| Poco espacio en disco | Cambiá la carpeta de datos del entorno a otro disco o desactivá *Conservar instantánea de inicio rápido*. |
-| Imagen corrupta, bordes negros o toques desfasados | Cambiá a **Ventana independiente**. |
-| Falla con rutas con acentos | Instalá en una carpeta sin acentos ni símbolos, por ejemplo `C:\ApkStart`. |
-| Una app no abre (solo ARM) | Activá el **Modo de compatibilidad ARM** y descargá la imagen con Google Play. |
+| «AVD ya en uso» / archivos de bloqueo | ApkStart los limpia solo. Si se repite, cierra otros emuladores (BlueStacks, MuMu, NoxPlayer, MEmu) o reinicia la PC. |
+| Puerto ocupado | Cierra otros emuladores. ApkStart elige otro puerto automáticamente. |
+| Poco espacio en disco | Cambia la carpeta de datos del entorno a otro disco o desactiva *Conservar instantánea de inicio rápido*. |
+| Imagen corrupta, bordes negros o toques desfasados | Cambia a **Ventana independiente**. |
+| Falla con rutas con acentos | Instala en una carpeta sin acentos ni símbolos, por ejemplo `C:\ApkStart`. |
+| Una app no abre (solo ARM) | Activa el **Modo de compatibilidad ARM** y descarga la imagen con Google Play. |
 
-Si el entorno no arranca después de varios intentos, ApkStart genera un **informe de diagnóstico**. Adjuntalo cuando reportes el problema.
+Si el entorno no arranca después de varios intentos, ApkStart genera un **informe de diagnóstico**. Adjúntalo cuando reportes el problema.
 
 ## Preguntas frecuentes
 
 **¿Es gratis?** Sí.
 
-**¿Necesito una cuenta de Google?** No. Solo la necesitás si usás el modo ARM con Google Play y querés descargar desde la tienda.
+**¿Necesito una cuenta de Google?** No. Solo la necesitas si usas el modo ARM con Google Play y quieres descargar desde la tienda.
 
 **¿Se actualiza solo?** No. Las actualizaciones automáticas están desactivadas; las versiones nuevas se publican en [Releases](../../releases).
 
@@ -120,7 +122,7 @@ Si el entorno no arranca después de varios intentos, ApkStart genera un **infor
 
 Cellcom ApkStart es una versión traducida y adaptada por **Cellcom Technology**, basada en [ApkStart](https://github.com/RoutineMiku/ApkStart) de RoutineMiku, distribuido bajo la **licencia MIT**.
 
-Este proyecto se distribuye con la misma licencia. Consultá el archivo [LICENSE](LICENSE).
+Este proyecto se distribuye con la misma licencia. Consulta el archivo [LICENSE](LICENSE).
 
 Android es una marca registrada de Google LLC. Este proyecto no está afiliado a Google ni a Microsoft.
 
